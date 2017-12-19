@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    !--用户信息布局-->
+    <LinearLayout style="@style/UserLayout">
+
+        <!--头像+username布局-->
+        <LinearLayout style="@style/UserLayout2">
+
+            <ImageView
+                android:id="@+id/my_user_image"
+                style="@style/MyUserImage" />
+
+            <TextView
+                android:id="@+id/mine_username"
+                style="@style/UserName" />
+
+        </LinearLayout>
+
+        <!--用户信息 商品 店铺 我的足迹-->
+        <LinearLayout style="@style/UserTitleLayout">
+
+            <RadioGroup style="@style/UserTitleGroupLayout">
+
+                <RadioButton
+                    style="@style/UserTitleButtonLayout"
+                    android:drawableTop="@mipmap/ic_action_collection"
+                    android:text="@string/shangpin" />
+
+                <RadioButton
+                    style="@style/UserTitleButtonLayout"
+                    android:drawableTop="@mipmap/ic_collection_store"
+                    android:text="@string/dianpu"/>
+
+                <RadioButton
+                    style="@style/UserTitleButtonLayout"
+                    android:drawableTop="@mipmap/ic_user_footprint"
+                    android:text="@string/wodezuji" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--全部订单 布局-->
+    <LinearLayout style="@style/Users">
+        <!--全部订单条目一 -->
+        <LinearLayout
+            android:id="@+id/userOrderLayout"
+            style="@style/UserLayoutOne">
+
+            <ImageView
+                style="@style/UserLayoutOne2"
+                android:src="@mipmap/ic_user_order" />
+
+            <TextView
+                android:id="@+id/UserAllOrder"
+                style="@style/UserLayoutOne3"
+                android:text="@string/quanbudingdan" />
+
+        </LinearLayout>
+        <!--全部订单条目二 -->
+        <LinearLayout style="@style/UserLayoutTwo">
+
+            <RadioGroup style="@style/UserLayoutTwoGroup">
+
+                <RadioButton
+                    android:drawableTop="@mipmap/ic_user_order_wait_drive"
+                    android:text="@string/weifukuan"
+                    style="@style/UserLayoutTwoRadioButton"/>
+
+                <RadioButton
+                    android:drawableTop="@mipmap/ic_user_order_wait_drive"
+                    android:text="@string/daifahuo"
+                    style="@style/UserLayoutTwoRadioButton"/>
+
+                <RadioButton
+                    android:drawableTop="@mipmap/ic_user_order_wait_receipt"
+                    android:text="@string/daishouhuo"
+                    style="@style/UserLayoutTwoRadioButton"/>
+
+                <RadioButton
+                    android:drawableTop="@mipmap/ic_user_order_wait_comment"
+                    android:text="@string/daipingjia"
+                    style="@style/UserLayoutTwoRadioButton"/>
+
+                <RadioButton
+                    android:drawableTop="@mipmap/ic_user_order_wait_refund"
+                    android:text="@string/tuikuan"
+                    style="@style/UserLayoutTwoRadioButton"/>
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--我的财产 布局-->
+    <LinearLayout style="@style/Users">
+        <!--全部订单条目一 -->
+        <LinearLayout style="@style/UserLayoutOne">
+
+            <ImageView
+                style="@style/UserLayoutOne2"
+                android:src="@mipmap/ic_user_property" />
+
+            <TextView
+                android:id="@+id/UserMyPropert"
+                style="@style/UserLayoutOne3"
+                android:text="@string/wodecaichan" />
+        </LinearLayout>
+        <!--全部订单条目二 -->
+        <LinearLayout style="@style/UserLayoutTwo">
+
+            <RadioGroup style="@style/UserLayoutTwoGroup">
+
+                <RadioButton
+                    style="@style/UserLayoutTwoRadioButton"
+                    android:drawableTop="@mipmap/ic_user_property_money"
+                    android:text="@string/yucunkuan" />
+
+                <RadioButton
+                    style="@style/UserLayoutTwoRadioButton"
+                    android:drawableTop="@mipmap/ic_user_property_card"
+                    android:text="@string/chongzhika" />
+
+                <RadioButton
+                    style="@style/UserLayoutTwoRadioButton"
+                    android:drawableTop="@mipmap/ic_user_property_vouchers"
+                    android:text="@string/daijinjuan" />
+
+                <RadioButton
+                    style="@style/UserLayoutTwoRadioButton"
+                    android:drawableTop="@mipmap/ic_user_property_red"
+                    android:text="@string/hongbao" />
+
+                <RadioButton
+                    style="@style/UserLayoutTwoRadioButton"
+                    android:drawableTop="@mipmap/ic_user_property_integral"
+                    android:text="@string/jifen" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--收货地址 系统设置 布局-->
+    <LinearLayout style="@style/Users">
+        <!--收货地址条目 -->
+        <LinearLayout
+            android:id="@+id/userAddressLayout"
+            style="@style/UserLayoutOne">
+
+            <ImageView
+                style="@style/UserLayoutOne2"
+                android:src="@mipmap/ic_user_address" />
+
+            <TextView
+                android:id="@+id/UserAddress"
+                style="@style/UserLayoutOne3"
+                android:text="@string/shouhuodizhi" />
+
+        </LinearLayout>
+        <!--系统设置条目 -->
+        <LinearLayout
+            android:id="@+id/userSettingsLayout"
+            style="@style/UserLayoutOne">
+
+            <ImageView
+                style="@style/UserLayoutOne2"
+                android:src="@mipmap/ic_user_setting" />
+
+            <TextView
+                android:id="@+id/UserSetting"
+                style="@style/UserLayoutOne3"
+                android:text="系统设置" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

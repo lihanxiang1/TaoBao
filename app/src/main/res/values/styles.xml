@@ -1,0 +1,201 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--底部按钮布局-->
+    <style name="MainBottomButton">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/bottom_button_color</item>
+    </style>
+
+    <!--二维码-->
+    <style name="zxingStyle">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:src">@mipmap/ic_normal_code</item>
+    </style>
+
+    <!--home页搜索框布局-->
+    <style name="HomeSearchLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">100</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--搜索框布局-->
+    <style name="HomeSearchEdit">
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_margin">11dp</item>
+        <item name="android:background">@color/searchEditColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/searchHint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--home页面消息框布局-->
+    <style name="HomeTitleSearchImage">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginLeft">-50dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+
+        <item name="android:src">@mipmap/ic_edit_search</item>
+    </style>
+
+    <!--home页面右上角消息列表按钮布局-->
+    <style name="HomeTitleUserContent">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:src">@mipmap/ic_normal_message</item>
+    </style>
+
+    <!--用户信息布局 Layout-->
+    <style name="UserLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:background">#DD3101</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--用户信息布局 Layout2-->
+    <style name="UserLayout2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--用户头像布局-->
+    <style name="MyUserImage">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@mipmap/uik_avatar_normal</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!--用户UserName布局-->
+    <style name="UserName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">点击登录</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--用户信息 商品 店铺 我的足迹 Layout布局-->
+    <style name="UserTitleLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">6</item>
+        <item name="android:background">#C02B01</item>
+    </style>
+
+    <!--用户信息 商品 店铺 我的足迹 GroupLayout布局-->
+    <style name="UserTitleGroupLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--用户信息 商品 店铺 我的足迹 ButtonLayout布局-->
+    <style name="UserTitleButtonLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 个人页面的Linear布局-->
+    <style name="Users">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!--用户条目一 布局-->
+    <style name="UserLayoutOne">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--用户条目一 image布局-->
+    <style name="UserLayoutOne2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <!--用户条目一 textview布局-->
+    <style name="UserLayoutOne3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:drawableRight">@mipmap/ic_normal_dot_left</item>
+        <item name="android:gravity">left</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--用户条目二 Lyout布局-->
+    <style name="UserLayoutTwo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--用户条目二 RadioGroup布局-->
+    <style name="UserLayoutTwoGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--用户条目二 RadioGroupRadioButton布局-->
+    <style name="UserLayoutTwoRadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">-10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/bottom_blurColor</item>
+    </style>
+</resources>

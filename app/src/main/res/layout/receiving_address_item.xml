@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/receiving_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/receiving_linear1"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/receiving_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人" />
+
+        <TextView
+            android:id="@+id/receiving_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="124124124" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/receiving_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/receiving_linear2"
+        android:text="收货地址111" />
+
+    <LinearLayout
+        android:id="@+id/receiving_linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/receiving_address"
+        android:layout_alignParentStart="true">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/receiving_check"
+            android:text="设为默认"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="right"
+            android:id="@+id/receiving_write"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="编辑"
+            android:padding="5dp"
+            android:drawableRight="@mipmap/ic_user_order_wait_comment"/>
+        <TextView
+            android:layout_weight="2"
+            android:gravity="right"
+            android:id="@+id/receiving_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="删除"
+            android:padding="5dp"
+            android:drawableRight="@mipmap/ic_code_close"/>
+    </LinearLayout>
+</RelativeLayout>

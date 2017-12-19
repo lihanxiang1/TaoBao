@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/cart_group_check"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/check_box_style"
+        android:button="@null"
+        android:focusable="false"
+        android:scaleX="0.6"
+        android:scaleY="0.6" />
+
+    <TextView
+        android:id="@+id/cart_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/cart_group_check"
+        android:text="商家名称"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>

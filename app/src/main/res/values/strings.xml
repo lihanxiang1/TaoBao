@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">淘宝:李汉翔</string>
+    <string name="bottom_home_name">首页</string>
+    <string name="bottom_class_name">分类</string>
+    <string name="bottom_buy_name">购物车</string>
+    <string name="bottom_my_name">个人</string>
+    <string name="searchHint">搜索一下</string>
+    <string name="quanbudingdan">全部订单</string>
+    <string name="weifukuan">未付款</string>
+    <string name="daifahuo">待发货</string>
+    <string name="daishouhuo">待收货</string>
+    <string name="daipingjia">待评价</string>
+    <string name="tuikuan">退款/货</string>
+    <string name="wodecaichan">我的财产</string>
+    <string name="yucunkuan">预存款</string>
+    <string name="chongzhika">充值卡</string>
+    <string name="daijinjuan">代金券</string>
+    <string name="hongbao">红包</string>
+    <string name="jifen">积分</string>
+    <string name="shouhuodizhi">收货地址</string>
+    <string name="shangpin">商品</string>
+    <string name="dianpu">店铺</string>
+    <string name="wodezuji">我的足迹</string>
+</resources>

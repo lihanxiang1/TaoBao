@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.lonely.taobao.shopcart.order.address.ReceivingAddressActivity">
+
+    <LinearLayout
+        android:id="@+id/receiving_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F8"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/receiving_title_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableStart="@mipmap/btn_back_detail_normal"
+            android:gravity="center_horizontal"
+            android:text="管理收货地址"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/receiving_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/receiving_listView"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:id="@+id/addNewAddress"
+        android:background="@color/orange"
+        android:orientation="horizontal">
+        <TextView
+            android:text="添加新地址"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

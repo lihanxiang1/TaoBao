@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.lonely.taobao.MainActivity">
+
+    <FrameLayout
+        android:layout_above="@+id/radio_group"
+        android:id="@+id/fragme_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_btn_home"
+            style="@style/MainBottomButton"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_bar_home"
+            android:text="@string/bottom_home_name" />
+
+        <RadioButton
+            android:id="@+id/main_btn_class"
+            style="@style/MainBottomButton"
+            android:drawableTop="@drawable/selector_bar_class"
+            android:text="@string/bottom_class_name" />
+
+        <RadioButton
+            android:id="@+id/main_btn_buy"
+            style="@style/MainBottomButton"
+            android:drawableTop="@drawable/selector_bar_buy"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/main_btn_my"
+            style="@style/MainBottomButton"
+            android:drawableTop="@drawable/selector_bar_my"
+            android:text="@string/bottom_my_name" />
+    </RadioGroup>
+
+</RelativeLayout>
